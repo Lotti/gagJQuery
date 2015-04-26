@@ -1,0 +1,1 @@
+A sweet and very simple image lazyloading plugin for jQuery. Enjoy.
