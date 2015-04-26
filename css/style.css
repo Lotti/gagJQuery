@@ -1,0 +1,67 @@
+body {
+    background: #cccccc;
+}
+
+ul.polaroids li {
+    display: inline;
+}
+
+ul.polaroids a {
+    background: none repeat scroll 0 0 #fff;
+    color: #333;
+    display: inline;
+    float: left;
+    font-family: "Marker Felt",sans-serif;
+    font-size: 18px;
+    margin: 0 0 27px 30px;
+    padding: 10px 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(-2deg);
+    width: auto;
+}
+ul.polaroids li {
+    padding-left: 0;
+}
+
+ul.polaroids img {
+    display: block;
+    margin-bottom: 12px;
+    width: 190px;
+}
+ul.polaroids a::after {
+    content: attr(title);
+}
+ul.polaroids li:nth-child(2n) a {
+    transform: rotate(2deg);
+}
+ul.polaroids li:nth-child(3n) a {
+    position: relative;
+    top: -5px;
+    transform: none;
+}
+ul.polaroids li:nth-child(5n) a {
+    position: relative;
+    right: 5px;
+    transform: rotate(5deg);
+}
+ul.polaroids li:nth-child(8n) a {
+    position: relative;
+    right: 5px;
+    top: 8px;
+}
+ul.polaroids li:nth-child(11n) a {
+    left: -5px;
+    position: relative;
+    top: 3px;
+}
+ul.polaroids li.messy a {
+    left: 160px;
+    margin-top: -400px;
+    position: relative;
+}
+ul.polaroids li a:hover {
+    position: relative;
+    transform: scale(1.25);
+    z-index: 5;
+}
